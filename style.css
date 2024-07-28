@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(90deg,black,rgba(0, 0, 255, 0.804),rgba(156, 22, 180, 0.719),rgba(255, 0, 0, 0.614),black);
+    background-size: 70%;
+    background-position: left;
+    transition: background-position 1s; 
+}
+
+body:hover,
+body:focus
+{
+background-position: right;
+}
+.content{
+    position:relative;
+    top:120px;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    border-radius: 50% ;
+    text-align: center;
+    background-image: linear-gradient(45deg,rgb(0, 0, 0),rgba(0, 0, 0, 0.769),rgba(114, 10, 10, 0.68),rgba(255, 0, 0, 0.737),rgba(255, 166, 0, 0.689),rgba(255, 255, 0, 0.703), rgba(0, 128, 0, 0.705),rgba(0, 0, 0, 0.779));
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 1s;  
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+   
+}
+
+.container:hover,
+.container:focus{
+background-position: right;
+}
+
+.hours,.minutes,.seconds{ 
+    background-color: rgba(3, 156, 131, 0.751);
+    display: inline-block;
+    width: 100px;
+    height: 87px;
+}
+.head{
+    background-color: rgba(1, 1, 1, 0.726);
+    width:300px;
+    height: 40px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 3px;
+}
+
+.inner{
+    background-color: hwb(0 4% 80% / 0.726);
+    height: 30px;
+}
+button{
+    background-color: rgba(8, 154, 132, 0.751);
+    display: block;
+    width: 90px;
+    height: 25px;
+    border-radius: 25px ;
+    margin-left: 160px;
+    
+}
+
+#hour,#min,#sec{
+    font-size: 50px;
+    text-align: center;
+    box-sizing: border-box;  
+}
+
+@media (max-height: 400px){
+   
+     .container{
+      height: 60vh;
+      width: 50vh;
+      border-radius: 5vh;
+      border: 10px solid black;
+    
+  }
+  .hours,.minutes,.seconds{ 
+    height: 10.5vh;
+    width: 15vh;
+    font-size: 3vh;
+} 
+
+#hour,#min,#sec{
+    font-size: 5vh;
+    text-align: center;
+    box-sizing: border-box;  
+}
+  .inner{
+    height: 5vh;
+  }
+  .head{
+    background-color: rgba(1, 1, 1, 0.726);
+    width:50vh;
+    height: 10vh;
+    font-size: 7vh;
+    margin-left: 0vh;
+    margin-bottom: 15vh;
+}
+  .content{
+    top:0px;
+  }
+  
+   
+}
+
